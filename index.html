@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ала-Арча Парк</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-logo">
+    <span class="logo-icon">🌲</span>
+    <div class="logo-text">
+      <span class="logo-top">АЛА-АРЧА</span>
+      <span class="logo-bottom">ПАРКЫ</span>
+    </div>
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active" data-i18n="nav_home">Башкы бет</a></li>
+    <li><a href="about.html" data-i18n="nav_about">О нас</a></li>
+    <li><a href="gallery.html" data-i18n="nav_gallery">Галерея</a></li>
+    <li><a href="news.html" data-i18n="nav_news">Жаңылыктар</a></li>
+    <li><a href="contact.html" data-i18n="nav_contact">Контакт</a></li>
+  </ul>
+  <div class="lang-switcher">
+    <button onclick="setLang('ru')" class="lang-btn active-lang" id="btn-ru">RU</button>
+    <button onclick="setLang('kg')" class="lang-btn" id="btn-kg">KG</button>
+    <button onclick="setLang('en')" class="lang-btn" id="btn-en">EN</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1 data-i18n="hero_title">АЛА-АРЧА ПАРКЫ</h1>
+    <p data-i18n="hero_subtitle">Жаратылышты коргоо — келечекти коргоо</p>
+    <a href="about.html" class="btn-hero" data-i18n="hero_btn">Кененирээк</a>
+  </div>
+</section>
+
+<!-- CARDS -->
+<section class="cards-section">
+  <div class="cards-grid">
+
+    <a href="about.html" class="card">
+      <div class="card-img" style="background-image:url('images/plants.jpg')"></div>
+      <div class="card-icon">🌿</div>
+      <div class="card-body">
+        <h3 data-i18n="card1_title">ӨСҮМДҮКТӨР</h3>
+        <p data-i18n="card1_desc">Арча паркынын бай өсүмдүк дүйнөсү менен таанышыңыз.</p>
+        <span class="card-arrow">→</span>
+      </div>
+    </a>
+
+    <a href="about.html" class="card">
+      <div class="card-img" style="background-image:url('images/animals.jpg')"></div>
+      <div class="card-icon">🐾</div>
+      <div class="card-body">
+        <h3 data-i18n="card2_title">ЖАНЫБАРЛАР</h3>
+        <p data-i18n="card2_desc">Паркта жашаган жаныбарлар жөнүндө маалымат алыңыз.</p>
+        <span class="card-arrow">→</span>
+      </div>
+    </a>
+
+    <a href="about.html" class="card">
+      <div class="card-img" style="background-image:url('images/park.jpg')"></div>
+      <div class="card-icon">⛰️</div>
+      <div class="card-body">
+        <h3 data-i18n="card3_title">ПАРК ЖӨНҮНДӨ</h3>
+        <p data-i18n="card3_desc">Тарыхы, максаты жана паркын маанисин тууралуу билиңиз.</p>
+        <span class="card-arrow">→</span>
+      </div>
+    </a>
+
+    <a href="news.html" class="card">
+      <div class="card-img" style="background-image:url('images/news.jpg')"></div>
+      <div class="card-icon">📢</div>
+      <div class="card-body">
+        <h3 data-i18n="card4_title">ЖАҢЫЛЫКТАР</h3>
+        <p data-i18n="card4_desc">Жаңылыктарды жана иш-чараларды көрүңүз.</p>
+        <span class="card-arrow">→</span>
+      </div>
+    </a>
+
+    <a href="contact.html" class="card">
+      <div class="card-img" style="background-image:url('images/contact.jpg')"></div>
+      <div class="card-icon">📞</div>
+      <div class="card-body">
+        <h3 data-i18n="card5_title">КОНТАКТ</h3>
+        <p data-i18n="card5_desc">Биз менен байланышып, суроолоруңузга жооп алыңыз.</p>
+        <span class="card-arrow">→</span>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <p data-i18n="footer_text">© 2024 Ала-Арча Мамлекеттик Жаратылыш Паркы</p>
+</footer>
+
+<script src="i18n.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

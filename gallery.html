@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Галерея — Ала-Арча Парк</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-logo">
+    <span class="logo-icon">🌲</span>
+    <div class="logo-text">
+      <span class="logo-top">АЛА-АРЧА</span>
+      <span class="logo-bottom">ПАРКЫ</span>
+    </div>
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html" data-i18n="nav_home">Башкы бет</a></li>
+    <li><a href="about.html" data-i18n="nav_about">О нас</a></li>
+    <li><a href="gallery.html" class="active" data-i18n="nav_gallery">Галерея</a></li>
+    <li><a href="news.html" data-i18n="nav_news">Жаңылыктар</a></li>
+    <li><a href="contact.html" data-i18n="nav_contact">Контакт</a></li>
+  </ul>
+  <div class="lang-switcher">
+    <button onclick="setLang('ru')" class="lang-btn active-lang" id="btn-ru">RU</button>
+    <button onclick="setLang('kg')" class="lang-btn" id="btn-kg">KG</button>
+    <button onclick="setLang('en')" class="lang-btn" id="btn-en">EN</button>
+  </div>
+</nav>
+
+<section class="page-hero" style="background-image:url('images/park.jpg')">
+  <div class="hero-overlay"></div>
+  <div class="page-hero-content">
+    <h1 data-i18n="nav_gallery">Галерея</h1>
+  </div>
+</section>
+
+<section class="gallery-section">
+  <p class="gallery-placeholder" data-i18n="gallery_placeholder">Фотографии скоро будут добавлены...</p>
+  <div class="gallery-grid" id="gallery-grid">
+    <!-- Photos will be added here -->
+  </div>
+</section>
+
+<footer class="footer">
+  <p data-i18n="footer_text">© 2024 Ала-Арча Мамлекеттик Жаратылыш Паркы</p>
+</footer>
+
+<script src="i18n.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
