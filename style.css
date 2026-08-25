@@ -28,32 +28,14 @@ body {
 .nav-logo {
   display: flex;
   align-items: center;
-  gap: 10px;
   text-decoration: none;
 }
 
-.logo-icon {
-  font-size: 2rem;
-}
-
-.logo-text {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.1;
-}
-
-.logo-top {
-  font-size: 1rem;
-  font-weight: 800;
-  color: #2d6a2d;
-  letter-spacing: 1px;
-}
-
-.logo-bottom {
-  font-size: 0.75rem;
-  font-weight: 600;
-  color: #5a9a5a;
-  letter-spacing: 2px;
+.nav-logo img {
+  height: 52px;
+  width: auto;
+  object-fit: contain;
+  display: block;
 }
 
 .nav-links {
