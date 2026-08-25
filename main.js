@@ -26,7 +26,28 @@ document.addEventListener('DOMContentLoaded', () => {
   const saved = localStorage.getItem('lang') || 'ru';
   applyLang(saved);
   initSlider();
+  initNavbar();
 });
+
+// Navbar: прозрачный на hero, белый после скролла
+function initNavbar() {
+  const navbar = document.querySelector('.navbar');
+  const hero = document.querySelector('.hero');
+  if (!navbar) return;
+
+  if (hero) {
+    navbar.classList.add('hero-nav');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 60) {
+        navbar.classList.remove('hero-nav');
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.add('hero-nav');
+        navbar.classList.remove('scrolled');
+      }
+    });
+  }
+}
 
 // ===== 3D SLIDER =====
 let currentSlide = 0;

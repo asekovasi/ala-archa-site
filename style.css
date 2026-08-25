@@ -10,6 +10,8 @@ body {
   color: #2d2d2d;
 }
 
+/* Hero идёт под навбаром — навбар прозрачный поверх */
+
 /* ===== NAVBAR ===== */
 .navbar {
   position: fixed;
@@ -23,6 +25,50 @@ body {
   padding: 14px 48px;
   background: rgba(255,255,255,0.97);
   box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+/* Прозрачный навбар поверх слайдера на главной */
+.navbar.hero-nav {
+  background: rgba(0,0,0,0.18);
+  box-shadow: none;
+}
+
+.navbar.hero-nav .nav-links a {
+  color: #fff;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.4);
+}
+
+.navbar.hero-nav .nav-links a:hover,
+.navbar.hero-nav .nav-links a.active {
+  color: #b8e6b8;
+}
+
+.navbar.hero-nav .lang-btn {
+  color: #fff;
+  border-color: rgba(255,255,255,0.6);
+}
+
+.navbar.hero-nav .lang-btn.active-lang {
+  background: #2d6a2d;
+  border-color: #2d6a2d;
+  color: #fff;
+}
+
+/* После скролла — белый навбар */
+.navbar.scrolled {
+  background: rgba(255,255,255,0.97);
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+}
+
+.navbar.scrolled .nav-links a {
+  color: #444;
+  text-shadow: none;
+}
+
+.navbar.scrolled .lang-btn {
+  color: #666;
+  border-color: #ccc;
 }
 
 .nav-logo {
@@ -93,6 +139,7 @@ body {
   justify-content: center;
   text-align: center;
   overflow: hidden;
+  margin-top: 0;
 }
 
 .slider-3d {
