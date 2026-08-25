@@ -83,27 +83,85 @@ body {
   color: #fff;
 }
 
-/* ===== HERO ===== */
+/* ===== HERO SLIDER ===== */
 .hero {
   position: relative;
   height: 100vh;
   min-height: 600px;
-  background: url('images/hero.jpg') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  overflow: hidden;
+}
+
+.slider-3d {
+  position: absolute;
+  inset: 0;
+  perspective: 1200px;
+  transform-style: preserve-3d;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transform: scale(1.08) translateZ(-80px) rotateY(8deg);
+  transition: opacity 1.2s cubic-bezier(.77,0,.175,1),
+              transform 1.4s cubic-bezier(.77,0,.175,1);
+  will-change: transform, opacity;
+}
+
+.slide.active {
+  opacity: 1;
+  transform: scale(1) translateZ(0px) rotateY(0deg);
+  z-index: 1;
+}
+
+.slide.prev-slide {
+  opacity: 0;
+  transform: scale(0.94) translateZ(-120px) rotateY(-10deg);
+  z-index: 0;
+}
+
+.slide.next-enter {
+  opacity: 0;
+  transform: scale(1.1) translateZ(-60px) rotateY(12deg);
+}
+
+/* Ken Burns zoom on active slide */
+.slide.active::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: inherit;
+  background-size: cover;
+  background-position: center;
+  animation: kenburns 8s ease-in-out infinite alternate;
+}
+
+@keyframes kenburns {
+  0%   { transform: scale(1)    translate(0, 0); }
+  100% { transform: scale(1.06) translate(-1%, -1%); }
 }
 
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.38);
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.25) 0%,
+    rgba(0,0,0,0.45) 60%,
+    rgba(0,0,0,0.6) 100%
+  );
+  z-index: 2;
 }
 
 .hero-content {
   position: relative;
-  z-index: 2;
+  z-index: 3;
   color: #fff;
 }
 
@@ -111,8 +169,9 @@ body {
   font-size: 3.8rem;
   font-weight: 800;
   letter-spacing: 4px;
-  text-shadow: 0 2px 16px rgba(0,0,0,0.4);
+  text-shadow: 0 2px 24px rgba(0,0,0,0.5);
   margin-bottom: 16px;
+  animation: fadeUp 1s ease both;
 }
 
 .hero-content p {
@@ -121,6 +180,12 @@ body {
   letter-spacing: 1px;
   margin-bottom: 36px;
   opacity: 0.92;
+  animation: fadeUp 1s ease 0.2s both;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
 .btn-hero {
@@ -134,12 +199,67 @@ body {
   font-weight: 700;
   letter-spacing: 1px;
   transition: background 0.2s, transform 0.2s;
+  animation: fadeUp 1s ease 0.4s both;
 }
 
 .btn-hero:hover {
   background: #1e4d1e;
   transform: translateY(-2px);
 }
+
+/* Slider nav buttons */
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: rgba(255,255,255,0.18);
+  border: 2px solid rgba(255,255,255,0.5);
+  color: #fff;
+  font-size: 1.4rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  backdrop-filter: blur(6px);
+  transition: background 0.2s, transform 0.2s;
+}
+
+.slider-btn:hover {
+  background: rgba(255,255,255,0.35);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.slider-prev { left: 28px; }
+.slider-next { right: 28px; }
+
+/* Slider dots */
+.slider-dots {
+  position: absolute;
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  display: flex;
+  gap: 10px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.45);
+  border: 2px solid rgba(255,255,255,0.7);
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.dot.active {
+  background: #fff;
+  transform: scale(1.3);
+}
+
+
 
 /* ===== CARDS SECTION ===== */
 .cards-section {

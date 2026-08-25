@@ -28,14 +28,25 @@
   </div>
 </nav>
 
-<!-- HERO -->
+<!-- HERO SLIDER -->
 <section class="hero">
+  <div class="slider-3d">
+    <div class="slide active" style="background-image:url('images/slide2.jpg')"></div>
+    <div class="slide" style="background-image:url('images/slide3.jpg')"></div>
+    <div class="slide" style="background-image:url('images/slide1.jpg')"></div>
+    <div class="slide" style="background-image:url('images/slide4.jpg')"></div>
+    <div class="slide" style="background-image:url('images/slide5.jpg')"></div>
+  </div>
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <h1 data-i18n="hero_title">АЛА-АРЧА ПАРКЫ</h1>
     <p data-i18n="hero_subtitle">Жаратылышты коргоо — келечекти коргоо</p>
     <a href="about.html" class="btn-hero" data-i18n="hero_btn">Кененирээк</a>
   </div>
+  <!-- Slider controls -->
+  <button class="slider-btn slider-prev" onclick="changeSlide(-1)">&#10094;</button>
+  <button class="slider-btn slider-next" onclick="changeSlide(1)">&#10095;</button>
+  <div class="slider-dots" id="sliderDots"></div>
 </section>
 
 <!-- CARDS -->
