@@ -82,6 +82,14 @@ body {
   width: auto;
   object-fit: contain;
   display: block;
+  mix-blend-mode: multiply;
+  filter: contrast(1.05);
+}
+
+/* На тёмном навбаре поверх слайдера — белый логотип */
+.navbar.hero-nav .nav-logo img {
+  mix-blend-mode: normal;
+  filter: brightness(0) invert(1);
 }
 
 .nav-links {
