@@ -401,13 +401,14 @@ body {
 /* ===== PAGE HERO (inner pages) ===== */
 .page-hero {
   position: relative;
-  height: 320px;
+  height: 420px;
   background-size: cover;
   background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 70px;
+  margin-top: 0;
+  padding-top: 70px; /* компенсация высоты навбара */
 }
 
 .page-hero-content {
@@ -421,7 +422,16 @@ body {
   font-size: 2.8rem;
   font-weight: 800;
   letter-spacing: 3px;
-  text-shadow: 0 2px 12px rgba(0,0,0,0.4);
+  text-shadow: 0 2px 16px rgba(0,0,0,0.6);
+}
+
+/* Оверлей на page-hero — лёгкий, не мутный */
+.page-hero .hero-overlay {
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.15) 0%,
+    rgba(0,0,0,0.35) 100%
+  );
 }
 
 /* ===== ABOUT PAGE ===== */

@@ -32,10 +32,12 @@ document.addEventListener('DOMContentLoaded', () => {
 // Navbar: прозрачный на hero, белый после скролла
 function initNavbar() {
   const navbar = document.querySelector('.navbar');
-  const hero = document.querySelector('.hero');
+  const hero = document.querySelector('.hero');       // только главная
+  const pageHero = document.querySelector('.page-hero'); // внутренние страницы
   if (!navbar) return;
 
   if (hero) {
+    // Главная — навбар прозрачный поверх слайдера
     navbar.classList.add('hero-nav');
     window.addEventListener('scroll', () => {
       if (window.scrollY > 60) {
@@ -46,6 +48,9 @@ function initNavbar() {
         navbar.classList.remove('scrolled');
       }
     });
+  } else if (pageHero) {
+    // Внутренние страницы — навбар белый, page-hero уходит под него через padding-top
+    navbar.classList.add('scrolled');
   }
 }
 
