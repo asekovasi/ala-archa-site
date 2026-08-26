@@ -53,7 +53,7 @@ const translations = {
     form_send: "Отправить",
     form_success: "✅ Сообщение отправлено! Мы свяжемся с вами в ближайшее время."
 
-    footer_text: "© 2024 Ала-Арча Государственный Природный Парк",
+    footer_text: "© 2026 Ала-Арча Государственный Природный Парк",
 
     plants_title: "🌿 Растения",
     plants_intro: "В ущелье Ала-Арча найдено 1100 видов растений, что составляет около одной трети видов всей флоры Киргизии. Богатство и разнообразие растительного покрова создается благодаря климатическим и микроклиматическим условиям, экспозиции склонов и различным типам почв.",
@@ -139,7 +139,7 @@ const translations = {
     form_send: "Жөнөтүү",
     form_success: "✅ Кат жөнөтүлдү! Жакында сиз менен байланышабыз."
 
-    footer_text: "© 2024 Ала-Арча Мамлекеттик Жаратылыш Паркы",
+    footer_text: "© 2026 Ала-Арча Мамлекеттик Жаратылыш Паркы",
 
     plants_title: "🌿 Өсүмдүктөр",
     plants_intro: "Ала-Арча капчыгайында 1100 түрдүү өсүмдүк табылган, бул Кыргызстандын бүткүл флорасынын болжол менен үчтөн бирин түзөт. Өсүмдүк жамынычынын байлыгы климаттык шарттарга, капталдардын экспозициясына жана ар кандай топурак түрлөрүнө байланыштуу.",
@@ -226,7 +226,7 @@ const translations = {
     form_send: "Send",
     form_success: "✅ Message sent! We will get back to you shortly."
 
-    footer_text: "© 2024 Ala-Archa State Nature Park",
+    footer_text: "© 2026 Ala-Archa State Nature Park",
 
     plants_title: "🌿 Plants",
     plants_intro: "1,100 plant species have been found in the Ala-Archa gorge, accounting for about one third of all flora species in Kyrgyzstan. The richness and diversity of the plant cover is due to climatic and microclimatic conditions, slope aspect and different soil types.",
@@ -259,3 +259,4 @@ const translations = {
     animal5_desc: "A majestic eagle soaring above the gorge. The national bird and symbol of Kyrgyzstan."
   }
 };
+
