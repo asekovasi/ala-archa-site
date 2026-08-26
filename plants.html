@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Растения — Ала-Арча Парк</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="index.html" class="nav-logo">
+    <img src="images/logo.png" alt="Ала-Арча Парк"/>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html" data-i18n="nav_home">Главная</a></li>
+    <li><a href="about.html" data-i18n="nav_about">О нас</a></li>
+    <li><a href="gallery.html" data-i18n="nav_gallery">Галерея</a></li>
+    <li><a href="news.html" data-i18n="nav_news">Новости</a></li>
+    <li><a href="contact.html" data-i18n="nav_contact">Контакт</a></li>
+  </ul>
+  <div class="lang-switcher">
+    <button onclick="setLang('ru')" class="lang-btn active-lang" id="btn-ru">RU</button>
+    <button onclick="setLang('kg')" class="lang-btn" id="btn-kg">KG</button>
+    <button onclick="setLang('en')" class="lang-btn" id="btn-en">EN</button>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="page-hero" style="background-image:url('images/plants.jpg')">
+  <div class="hero-overlay"></div>
+  <div class="page-hero-content">
+    <h1 data-i18n="plants_title">🌿 Растения</h1>
+  </div>
+</section>
+
+<!-- Intro text -->
+<section class="plants-intro">
+  <div class="plants-intro-inner">
+    <p data-i18n="plants_intro">
+      В ущелье Ала-Арча найдено <strong>1100 видов растений</strong>, что составляет около одной трети видов всей флоры Киргизии. Богатство и разнообразие растительного покрова создается благодаря климатическим и микроклиматическим условиям, экспозиции склонов и различным типам почв.
+    </p>
+    <p data-i18n="plants_intro2">
+      В свою очередь важным фактором, определяющим различия климата и других условий жизни растений, является высота. Поэтому растительный покров подчиняется здесь закону вертикальной зональности и образует ряд высотных поясов.
+    </p>
+  </div>
+</section>
+
+<!-- Plant cards -->
+<section class="plants-section">
+  <h2 class="plants-section-title" data-i18n="plants_section_title">Виды растений</h2>
+  <div class="plants-grid">
+
+    <div class="plant-card">
+      <div class="plant-img-wrap">
+        <img src="images/flora1.jpg" alt="Бузина красная"/>
+      </div>
+      <div class="plant-card-body">
+        <h3 data-i18n="plant1_name">Бузина красная</h3>
+        <p data-i18n="plant1_desc">Кустарник с ярко-красными ягодами, произрастающий в лесном поясе ущелья на высоте 1600–2400 м.</p>
+      </div>
+    </div>
+
+    <div class="plant-card">
+      <div class="plant-img-wrap">
+        <img src="images/flora2.jpg" alt="Барбарис"/>
+      </div>
+      <div class="plant-card-body">
+        <h3 data-i18n="plant2_name">Барбарис</h3>
+        <p data-i18n="plant2_desc">Колючий кустарник с синевато-фиолетовыми ягодами, типичный представитель субальпийского пояса.</p>
+      </div>
+    </div>
+
+    <div class="plant-card">
+      <div class="plant-img-wrap">
+        <img src="images/flora3.jpg" alt="Мак полярный"/>
+      </div>
+      <div class="plant-card-body">
+        <h3 data-i18n="plant3_name">Мак полярный</h3>
+        <p data-i18n="plant3_desc">Жёлтые цветки высокогорного мака украшают каменистые склоны на высоте 3000–4000 м над уровнем моря.</p>
+      </div>
+    </div>
+
+    <div class="plant-card">
+      <div class="plant-img-wrap">
+        <img src="images/flora4.jpg" alt="Рихтерия эдельвейсовидная"/>
+      </div>
+      <div class="plant-card-body">
+        <h3 data-i18n="plant4_name">Рихтерия эдельвейсовидная</h3>
+        <p data-i18n="plant4_desc">Редкое высокогорное растение с белоснежными цветками, обитающее на скалистых осыпях альпийского пояса.</p>
+      </div>
+    </div>
+
+    <div class="plant-card">
+      <div class="plant-img-wrap">
+        <img src="images/plants.jpg" alt="Цветки алычи"/>
+      </div>
+      <div class="plant-card-body">
+        <h3 data-i18n="plant5_name">Цветки алычи</h3>
+        <p data-i18n="plant5_desc">Нежные розово-белые цветки алычи появляются ранней весной и знаменуют начало вегетационного сезона в парке.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <p data-i18n="footer_text">© 2024 Ала-Арча Государственный Природный Парк</p>
+</footer>
+
+<script src="i18n.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

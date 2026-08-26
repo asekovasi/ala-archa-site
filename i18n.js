@@ -43,11 +43,25 @@ const translations = {
     contact_email_label: "Email",
     contact_email_val: "Скоро будет добавлен",
 
-    footer_text: "© 2024 Ала-Арча Государственный Природный Парк"
+    footer_text: "© 2024 Ала-Арча Государственный Природный Парк",
+
+    plants_title: "🌿 Растения",
+    plants_intro: "В ущелье Ала-Арча найдено 1100 видов растений, что составляет около одной трети видов всей флоры Киргизии. Богатство и разнообразие растительного покрова создается благодаря климатическим и микроклиматическим условиям, экспозиции склонов и различным типам почв.",
+    plants_intro2: "В свою очередь важным фактором, определяющим различия климата и других условий жизни растений, является высота. Поэтому растительный покров подчиняется здесь закону вертикальной зональности и образует ряд высотных поясов.",
+    plants_section_title: "Виды растений",
+    plant1_name: "Бузина красная",
+    plant1_desc: "Кустарник с ярко-красными ягодами, произрастающий в лесном поясе ущелья на высоте 1600–2400 м.",
+    plant2_name: "Барбарис",
+    plant2_desc: "Колючий кустарник с синевато-фиолетовыми ягодами, типичный представитель субальпийского пояса.",
+    plant3_name: "Мак полярный",
+    plant3_desc: "Жёлтые цветки высокогорного мака украшают каменистые склоны на высоте 3000–4000 м над уровнем моря.",
+    plant4_name: "Рихтерия эдельвейсовидная",
+    plant4_desc: "Редкое высокогорное растение с белоснежными цветками, обитающее на скалистых осыпях альпийского пояса.",
+    plant5_name: "Цветки алычи",
+    plant5_desc: "Нежные розово-белые цветки алычи появляются ранней весной и знаменуют начало вегетационного сезона в парке."
   },
 
-  kg: {
-    nav_home: "Башкы бет",
+  kg: {    nav_home: "Башкы бет",
     nav_about: "Биз жөнүндө",
     nav_gallery: "Галерея",
     nav_news: "Жаңылыктар",
@@ -90,7 +104,22 @@ const translations = {
     contact_email_label: "Email",
     contact_email_val: "Жакында кошулат",
 
-    footer_text: "© 2024 Ала-Арча Мамлекеттик Жаратылыш Паркы"
+    footer_text: "© 2024 Ала-Арча Мамлекеттик Жаратылыш Паркы",
+
+    plants_title: "🌿 Өсүмдүктөр",
+    plants_intro: "Ала-Арча капчыгайында 1100 түрдүү өсүмдүк табылган, бул Кыргызстандын бүткүл флорасынын болжол менен үчтөн бирин түзөт. Өсүмдүк жамынычынын байлыгы климаттык шарттарга, капталдардын экспозициясына жана ар кандай топурак түрлөрүнө байланыштуу.",
+    plants_intro2: "Өсүмдүктөрдүн жашоо шарттарындагы айырмачылыктарды аныктаган маанилүү фактор — бийиктик. Ошондуктан өсүмдүк жамынычы тик алкактык мыйзамга баш ийет жана бир катар бийиктик алкактарын түзөт.",
+    plants_section_title: "Өсүмдүк түрлөрү",
+    plant1_name: "Кызыл чоку",
+    plant1_desc: "Жарык-кызыл мөмөлөрү бар бадал, капчыгайдын токой алкагында 1600–2400 м бийиктикте өсөт.",
+    plant2_name: "Барбарис",
+    plant2_desc: "Көгүш-кызгылт мөмөлөрү бар тикенек бадал, субальп алкагынын мүнөздүү өкүлү.",
+    plant3_name: "Полярдык ак гүл",
+    plant3_desc: "Бийик тоолуу макынын сары гүлдөрү 3000–4000 м бийиктикте таштак капталдарды жасайт.",
+    plant4_name: "Рихтерия эдельвейс сымал",
+    plant4_desc: "Альп алкагынын таштак капчалдарында жашаган, ак гүлдөрү бар сейрек бийик тоолуу өсүмдүк.",
+    plant5_name: "Алча гүлдөрү",
+    plant5_desc: "Алчанын нежный кызгылт-ак гүлдөрү эрте жазда пайда болуп, паркта вегетация мезгилинин башталышын белгилейт."
   },
 
   en: {
@@ -137,6 +166,21 @@ const translations = {
     contact_email_label: "Email",
     contact_email_val: "Coming soon",
 
-    footer_text: "© 2024 Ala-Archa State Nature Park"
+    footer_text: "© 2024 Ala-Archa State Nature Park",
+
+    plants_title: "🌿 Plants",
+    plants_intro: "1,100 plant species have been found in the Ala-Archa gorge, accounting for about one third of all flora species in Kyrgyzstan. The richness and diversity of the plant cover is due to climatic and microclimatic conditions, slope aspect and different soil types.",
+    plants_intro2: "Altitude is the key factor determining differences in climate and other conditions for plant life. As a result, the vegetation follows the law of vertical zonality and forms a series of altitudinal belts.",
+    plants_section_title: "Plant Species",
+    plant1_name: "Red Elderberry",
+    plant1_desc: "A shrub with bright red berries, growing in the forest belt of the gorge at altitudes of 1,600–2,400 m.",
+    plant2_name: "Barberry",
+    plant2_desc: "A thorny shrub with bluish-violet berries, a typical representative of the subalpine belt.",
+    plant3_name: "Arctic Poppy",
+    plant3_desc: "The yellow flowers of the high-altitude poppy adorn stony slopes at elevations of 3,000–4,000 m above sea level.",
+    plant4_name: "Richter's Edelweiss",
+    plant4_desc: "A rare alpine plant with snow-white flowers, inhabiting the rocky screes of the alpine belt.",
+    plant5_name: "Cherry Plum Blossoms",
+    plant5_desc: "The delicate pink-white blossoms of cherry plum appear in early spring, marking the beginning of the growing season in the park."
   }
 };
