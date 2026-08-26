@@ -955,6 +955,272 @@ body {
 }
 
 /* ===== NEWS PAGE ===== */
+.news-hero {
+  position: relative;
+  height: 380px;
+  background: url('images/slide1.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 0;
+}
+
+.news-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.6));
+}
+
+.news-hero-content {
+  position: relative;
+  z-index: 2;
+  padding-top: 70px;
+  color: #fff;
+}
+
+.news-hero-content h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  letter-spacing: 3px;
+  text-shadow: 0 2px 16px rgba(0,0,0,0.5);
+  margin-bottom: 10px;
+}
+
+.news-hero-content p {
+  font-size: 1rem;
+  opacity: 0.88;
+}
+
+.news-page-section {
+  padding: 60px 48px 80px;
+  background: #f5f5f0;
+}
+
+.news-page-container {
+  max-width: 860px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* Article card */
+.news-article {
+  background: #fff;
+  border-radius: 16px;
+  padding: 32px 36px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+  border-left: 5px solid #2d6a2d;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.news-article:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 28px rgba(0,0,0,0.11);
+}
+
+.news-article.featured {
+  border-left-color: #f9a825;
+  background: linear-gradient(135deg, #fff 80%, #fffde7);
+}
+
+.news-article-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.news-tag {
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+}
+
+.news-tag.hot          { background: #fdecea; color: #c62828; }
+.news-tag.ecology      { background: #e8f5e8; color: #2d6a2d; }
+.news-tag.infrastructure{ background: #e3f2fd; color: #1565c0; }
+.news-tag.event        { background: #fff8e1; color: #e65100; }
+.news-tag.finance      { background: #f3e5f5; color: #6a1b9a; }
+.news-tag.international{ background: #e0f7fa; color: #00695c; }
+
+.news-date-label {
+  font-size: 0.78rem;
+  color: #999;
+  font-weight: 600;
+  margin-left: auto;
+}
+
+.news-article-title {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #1e3d1e;
+  margin-bottom: 14px;
+  line-height: 1.4;
+}
+
+.news-article p {
+  font-size: 0.93rem;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 12px;
+}
+
+.news-article p:last-child { margin-bottom: 0; }
+.news-article strong { color: #2d6a2d; }
+
+/* Highlights list */
+.news-highlights {
+  background: #f9fdf9;
+  border-radius: 10px;
+  padding: 16px 20px;
+  margin: 14px 0;
+}
+
+.news-highlights h4 {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #2d6a2d;
+  margin-bottom: 10px;
+}
+
+.news-highlights ul {
+  padding-left: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.news-highlights li {
+  font-size: 0.88rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* Note */
+.news-note {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  background: #fff8e1;
+  border-radius: 10px;
+  padding: 14px 18px;
+  margin-top: 14px;
+  border-left: 4px solid #f9a825;
+}
+
+.news-note span { font-size: 1.3rem; flex-shrink: 0; }
+.news-note p { margin: 0; font-size: 0.88rem; color: #555; }
+
+/* Progress */
+.news-progress {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 16px 0;
+}
+
+.progress-item {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  border-radius: 10px;
+  padding: 14px 18px;
+}
+
+.progress-item.done    { background: #e8f5e8; }
+.progress-item.current { background: #e3f2fd; }
+
+.progress-icon { font-size: 1.4rem; flex-shrink: 0; }
+
+.progress-item strong { display: block; font-size: 0.9rem; color: #2d2d2d; margin-bottom: 4px; }
+.progress-item p { font-size: 0.85rem; color: #555; margin: 0; }
+
+/* Cable car stats */
+.news-cable-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin: 20px 0;
+}
+
+.cable-stat {
+  background: #fff8e1;
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+}
+
+.cable-stat-num {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #e65100;
+}
+
+.cable-stat-label {
+  font-size: 0.75rem;
+  color: #666;
+  margin-top: 4px;
+}
+
+/* Summary block */
+.news-summary {
+  background: #1e3d1e;
+  border-radius: 16px;
+  padding: 32px 36px;
+  color: #fff;
+}
+
+.news-summary h3 {
+  font-size: 1.1rem;
+  font-weight: 800;
+  margin-bottom: 24px;
+  letter-spacing: 0.5px;
+}
+
+.news-summary-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.summary-item {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.summary-num {
+  width: 36px;
+  height: 36px;
+  background: #2d6a2d;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.summary-item strong {
+  display: block;
+  font-size: 0.95rem;
+  margin-bottom: 4px;
+  color: #b8e6b8;
+}
+
+.summary-item p {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.75);
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Old news section styles kept for compatibility */
 .news-section {
   padding: 60px 48px;
   max-width: 1100px;

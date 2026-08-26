@@ -3,21 +3,21 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Жаңылыктар — Ала-Арча Парк</title>
+  <title>Новости — Ала-Арча Парк</title>
   <link rel="stylesheet" href="style.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet"/>
 </head>
 <body>
 
-<nav class="navbar">
+<nav class="navbar scrolled">
   <a href="index.html" class="nav-logo">
-    <img src="images/logo.png" alt="Ала-Арча Парк" />
+    <img src="images/logo.png" alt="Ала-Арча Парк"/>
   </a>
   <ul class="nav-links">
-    <li><a href="index.html" data-i18n="nav_home">Башкы бет</a></li>
+    <li><a href="index.html" data-i18n="nav_home">Главная</a></li>
     <li><a href="park-info.html" data-i18n="nav_about">О нас</a></li>
     <li><a href="gallery.html" data-i18n="nav_gallery">Галерея</a></li>
-    <li><a href="news.html" class="active" data-i18n="nav_news">Жаңылыктар</a></li>
+    <li><a href="news.html" class="active" data-i18n="nav_news">Новости</a></li>
     <li><a href="contact.html" data-i18n="nav_contact">Контакт</a></li>
   </ul>
   <div class="lang-switcher">
@@ -27,26 +27,172 @@
   </div>
 </nav>
 
-<section class="page-hero" style="background-image:url('images/news.jpg')">
-  <div class="hero-overlay"></div>
-  <div class="page-hero-content">
-    <h1 data-i18n="nav_news">Жаңылыктар</h1>
+<!-- Hero -->
+<section class="news-hero">
+  <div class="news-hero-overlay"></div>
+  <div class="news-hero-content">
+    <h1 data-i18n="nav_news">📰 Новости</h1>
+    <p>Актуальные события Государственного природного парка «Ала-Арча»</p>
   </div>
 </section>
 
-<section class="news-section">
-  <p class="gallery-placeholder" data-i18n="news_placeholder">Жаңылыктар жакында кошулат...</p>
-  <div class="news-grid" id="news-grid">
-    <!-- News will be added here -->
+<!-- News list -->
+<section class="news-page-section">
+  <div class="news-page-container">
+
+    <!-- News card 1 -->
+    <article class="news-article">
+      <div class="news-article-header">
+        <span class="news-tag hot">🔥 Самое свежее</span>
+        <span class="news-date-label">25 августа 2026</span>
+      </div>
+      <h2 class="news-article-title">1. Усиливают электроснабжение парка в рамках подготовки к мероприятиям ШОС</h2>
+      <p>В парке продолжаются работы по повышению надёжности электроснабжения. Бишкекское предприятие электрических сетей завершило реконструкцию воздушной линии 10 кВ от подстанции «Байтик».</p>
+      <div class="news-highlights">
+        <h4>В рамках работ:</h4>
+        <ul>
+          <li>Заменён провод на СИП-3</li>
+          <li>Установлено <strong>115 новых опор</strong></li>
+          <li>Проводится программирование реклоузеров 10 кВ</li>
+          <li>Реклоузеры позволят дистанционно управлять отдельными участками сети и быстрее устранять аварийные ситуации</li>
+        </ul>
+      </div>
+      <p>Работы связаны с подготовкой инфраструктуры к мероприятиям <strong>Шанхайской организации сотрудничества (ШОС)</strong>.</p>
+    </article>
+
+    <!-- News card 2 -->
+    <article class="news-article">
+      <div class="news-article-header">
+        <span class="news-tag ecology">🌿 Экология</span>
+        <span class="news-date-label">24 августа 2026</span>
+      </div>
+      <h2 class="news-article-title">2. В районе Ала-Арчинского водохранилища проверяют сообщения о незаконных свалках</h2>
+      <p>Министерство природных ресурсов, экологии и технического надзора сообщило о проверке информации, распространявшейся в интернете, о наличии несанкционированных мест складирования отходов на берегу Ала-Арчинского водохранилища.</p>
+      <p>Региональное управление экологического и технического надзора провело соответствующую проверку.</p>
+      <div class="news-note">
+        <span>ℹ️</span>
+        <p><strong>Важно:</strong> Ала-Арчинское водохранилище — это не территория самого государственного природного парка «Ала-Арча».</p>
+      </div>
+    </article>
+
+    <!-- News card 3 -->
+    <article class="news-article">
+      <div class="news-article-header">
+        <span class="news-tag infrastructure">🚴 Инфраструктура</span>
+        <span class="news-date-label">2026</span>
+      </div>
+      <h2 class="news-article-title">3. Продолжается строительство велодорожки Байтик — Ала-Арча</h2>
+      <p>Министерство транспорта сообщает о строительстве <strong>13-километровой велодорожки</strong> от села Байтик до государственного природного парка «Ала-Арча».</p>
+      <div class="news-progress">
+        <div class="progress-item done">
+          <div class="progress-icon">✅</div>
+          <div>
+            <strong>2025 год</strong>
+            <p>4,2 км уже заасфальтированы и введены в эксплуатацию</p>
+          </div>
+        </div>
+        <div class="progress-item current">
+          <div class="progress-icon">🔨</div>
+          <div>
+            <strong>2026 год</strong>
+            <p>Продолжаются земляные работы на участке 4,8 км</p>
+          </div>
+        </div>
+      </div>
+      <p>Проект направлен на развитие туристического потенциала региона и создание условий для активного отдыха.</p>
+    </article>
+
+    <!-- News card 4 -->
+    <article class="news-article featured">
+      <div class="news-article-header">
+        <span class="news-tag event">⭐ Главное событие</span>
+        <span class="news-date-label">18 февраля 2026</span>
+      </div>
+      <h2 class="news-article-title">4. В парке уже работает новая канатная дорога</h2>
+      <p>Одно из главных событий этого года — открытие новой канатной дороги с участием <strong>Президента Садыра Жапарова</strong>.</p>
+      <div class="news-cable-stats">
+        <div class="cable-stat">
+          <div class="cable-stat-num">1 км</div>
+          <div class="cable-stat-label">Длина</div>
+        </div>
+        <div class="cable-stat">
+          <div class="cable-stat-num">16</div>
+          <div class="cable-stat-label">Кабин</div>
+        </div>
+        <div class="cable-stat">
+          <div class="cable-stat-num">10</div>
+          <div class="cable-stat-label">Мест в кабине</div>
+        </div>
+        <div class="cable-stat">
+          <div class="cable-stat-num">2 VIP</div>
+          <div class="cable-stat-label">Кабины (до 4 чел.)</div>
+        </div>
+      </div>
+      <p>Это существенно изменило туристическую инфраструктуру парка и сделало высокогорную часть более доступной для посетителей.</p>
+    </article>
+
+    <!-- News card 5 -->
+    <article class="news-article">
+      <div class="news-article-header">
+        <span class="news-tag finance">💰 Тарифы</span>
+        <span class="news-date-label">8 июня 2026</span>
+      </div>
+      <h2 class="news-article-title">5. В июне повысились тарифы на посещение</h2>
+      <p>С 8 июня 2026 года в «Ала-Арче» вступил в силу новый прейскурант. Стоимость ряда услуг и въезда была увеличена примерно на <strong>20–25%</strong>.</p>
+    </article>
+
+    <!-- News card 6 -->
+    <article class="news-article">
+      <div class="news-article-header">
+        <span class="news-tag international">🌍 Международное</span>
+        <span class="news-date-label">2026</span>
+      </div>
+      <h2 class="news-article-title">6. Парк активно используется для международных мероприятий</h2>
+      <p>В течение 2026 года «Ала-Арча» неоднократно становилась площадкой для приёма иностранных делегаций и проведения международных мероприятий.</p>
+      <div class="news-highlights">
+        <ul>
+          <li><strong>28 апреля 2026</strong> — парк посетили Президент Кыргызстана Садыр Жапаров и председатель Совета министров Того Фор Эссозимна Гнассингбе</li>
+          <li>Проходили мероприятия в рамках <strong>ШОС</strong>, включая экологические инициативы и посадку деревьев участниками совещания руководителей природоохранных ведомств</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- Summary block -->
+    <div class="news-summary">
+      <h3>📌 Что сейчас самое актуальное для парка</h3>
+      <div class="news-summary-grid">
+        <div class="summary-item">
+          <div class="summary-num">1</div>
+          <div>
+            <strong>Подготовка к мероприятиям ШОС</strong>
+            <p>Электроснабжение, инфраструктура, благоустройство и обеспечение безопасности</p>
+          </div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-num">2</div>
+          <div>
+            <strong>Развитие туристической инфраструктуры</strong>
+            <p>Новая канатная дорога, маршруты, объекты размещения</p>
+          </div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-num">3</div>
+          <div>
+            <strong>Транспортная доступность</strong>
+            <p>Строительство велодорожки Байтик–Ала-Арча и развитие подъездной инфраструктуры</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 
 <footer class="footer">
-  <p data-i18n="footer_text">© 2024 Ала-Арча Мамлекеттик Жаратылыш Паркы</p>
+  <p data-i18n="footer_text">© 2024 Ала-Арча Государственный Природный Парк</p>
 </footer>
 
 <script src="i18n.js"></script>
 <script src="main.js"></script>
 </body>
 </html>
-
