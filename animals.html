@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Животные — Ала-Арча Парк</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<nav class="navbar scrolled">
+  <a href="index.html" class="nav-logo">
+    <img src="images/logo.png" alt="Ала-Арча Парк"/>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html" data-i18n="nav_home">Главная</a></li>
+    <li><a href="about.html" data-i18n="nav_about">О нас</a></li>
+    <li><a href="gallery.html" data-i18n="nav_gallery">Галерея</a></li>
+    <li><a href="news.html" data-i18n="nav_news">Новости</a></li>
+    <li><a href="contact.html" data-i18n="nav_contact">Контакт</a></li>
+  </ul>
+  <div class="lang-switcher">
+    <button onclick="setLang('ru')" class="lang-btn active-lang" id="btn-ru">RU</button>
+    <button onclick="setLang('kg')" class="lang-btn" id="btn-kg">KG</button>
+    <button onclick="setLang('en')" class="lang-btn" id="btn-en">EN</button>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="animals-hero">
+  <div class="animals-hero-overlay"></div>
+  <div class="animals-hero-content">
+    <h1 data-i18n="animals_title">🐾 Животные</h1>
+  </div>
+</section>
+
+<!-- Intro -->
+<section class="plants-intro">
+  <div class="plants-intro-inner">
+    <p data-i18n="animals_intro">
+      Фауна Государственного природного парка «Ала-Арча» уникальна благодаря резким перепадам высот (от 1600 до 4860 метров), что позволяет уживаться здесь обитателям степей, лесов и сурового высокогорья.
+    </p>
+    <p data-i18n="animals_intro2">
+      <strong>Всякая охота на территории парка строго запрещена.</strong>
+    </p>
+  </div>
+</section>
+
+<!-- Animal cards -->
+<section class="plants-section">
+  <h2 class="plants-section-title" data-i18n="animals_section_title">Виды животных</h2>
+  <div class="plants-grid">
+
+    <div class="plant-card">
+      <div class="plant-img-wrap">
+        <img src="images/fauna1.jpg" alt="Сибирский горный козёл"/>
+      </div>
+      <div class="plant-card-body">
+        <h3 data-i18n="animal1_name">Сибирский горный козёл</h3>
+        <p data-i18n="animal1_desc">Самый крупный представитель рода горных козлов, обитающий на скалистых склонах и альпийских лугах парка.</p>
+      </div>
+    </div>
+
+    <div class="plant-card">
+      <div class="plant-img-wrap">
+        <img src="images/fauna2.jpg" alt="Барсук"/>
+      </div>
+      <div class="plant-card-body">
+        <h3 data-i18n="animal2_name">Барсук</h3>
+        <p data-i18n="animal2_desc">Всеядный хищник семейства куньих, ведущий ночной образ жизни в лесном поясе ущелья.</p>
+      </div>
+    </div>
+
+    <div class="plant-card">
+      <div class="plant-img-wrap">
+        <img src="images/fauna3.jpg" alt="Илбирс (снежный барс)"/>
+      </div>
+      <div class="plant-card-body">
+        <h3 data-i18n="animal3_name">Илбирс (снежный барс)</h3>
+        <p data-i18n="animal3_desc">Редкий и охраняемый хищник, символ Кыргызстана. Обитает в высокогорье, занесён в Красную книгу.</p>
+      </div>
+    </div>
+
+    <div class="plant-card">
+      <div class="plant-img-wrap">
+        <img src="images/fauna4.jpg" alt="Сибирский черноголовый чекан"/>
+      </div>
+      <div class="plant-card-body">
+        <h3 data-i18n="animal4_name">Сибирский черноголовый чекан</h3>
+        <p data-i18n="animal4_desc">Небольшая перелётная птица, гнездящаяся на открытых склонах и лугах парка в летний период.</p>
+      </div>
+    </div>
+
+    <div class="plant-card">
+      <div class="plant-img-wrap">
+        <img src="images/fauna5.jpg" alt="Беркут"/>
+      </div>
+      <div class="plant-card-body">
+        <h3 data-i18n="animal5_name">Беркут</h3>
+        <p data-i18n="animal5_desc">Величественный хищник-орёл, парящий над ущельем. Национальная птица и символ Кыргызстана.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <p data-i18n="footer_text">© 2024 Ала-Арча Государственный Природный Парк</p>
+</footer>
+
+<script src="i18n.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

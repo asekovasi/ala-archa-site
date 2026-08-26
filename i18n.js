@@ -58,7 +58,22 @@ const translations = {
     plant4_name: "Рихтерия эдельвейсовидная",
     plant4_desc: "Редкое высокогорное растение с белоснежными цветками, обитающее на скалистых осыпях альпийского пояса.",
     plant5_name: "Цветки алычи",
-    plant5_desc: "Нежные розово-белые цветки алычи появляются ранней весной и знаменуют начало вегетационного сезона в парке."
+    plant5_desc: "Нежные розово-белые цветки алычи появляются ранней весной и знаменуют начало вегетационного сезона в парке.",
+
+    animals_title: "🐾 Животные",
+    animals_intro: "Фауна Государственного природного парка «Ала-Арча» уникальна благодаря резким перепадам высот (от 1600 до 4860 метров), что позволяет уживаться здесь обитателям степей, лесов и сурового высокогорья.",
+    animals_intro2: "Всякая охота на территории парка строго запрещена.",
+    animals_section_title: "Виды животных",
+    animal1_name: "Сибирский горный козёл",
+    animal1_desc: "Самый крупный представитель рода горных козлов, обитающий на скалистых склонах и альпийских лугах парка.",
+    animal2_name: "Барсук",
+    animal2_desc: "Всеядный хищник семейства куньих, ведущий ночной образ жизни в лесном поясе ущелья.",
+    animal3_name: "Илбирс (снежный барс)",
+    animal3_desc: "Редкий и охраняемый хищник, символ Кыргызстана. Обитает в высокогорье, занесён в Красную книгу.",
+    animal4_name: "Сибирский черноголовый чекан",
+    animal4_desc: "Небольшая перелётная птица, гнездящаяся на открытых склонах и лугах парка в летний период.",
+    animal5_name: "Беркут",
+    animal5_desc: "Величественный хищник-орёл, парящий над ущельем. Национальная птица и символ Кыргызстана."
   },
 
   kg: {    nav_home: "Башкы бет",
@@ -119,7 +134,22 @@ const translations = {
     plant4_name: "Рихтерия эдельвейс сымал",
     plant4_desc: "Альп алкагынын таштак капчалдарында жашаган, ак гүлдөрү бар сейрек бийик тоолуу өсүмдүк.",
     plant5_name: "Алча гүлдөрү",
-    plant5_desc: "Алчанын нежный кызгылт-ак гүлдөрү эрте жазда пайда болуп, паркта вегетация мезгилинин башталышын белгилейт."
+    plant5_desc: "Алчанын нежный кызгылт-ак гүлдөрү эрте жазда пайда болуп, паркта вегетация мезгилинин башталышын белгилейт.",
+
+    animals_title: "🐾 Жаныбарлар",
+    animals_intro: "«Ала-Арча» Мамлекеттик жаратылыш паркынын фаунасы уникалдуу — бийиктиктин 1600дөн 4860 метрге чейин өзгөрүшү жапайы жаратылыштын ар кандай өкүлдөрүнүн чогуу жашоосуна мүмкүнчүлүк берет.",
+    animals_intro2: "Парктын аймагында ар кандай аңчылык катуу тыюу салынган.",
+    animals_section_title: "Жаныбарлардын түрлөрү",
+    animal1_name: "Сибирь тоо теке",
+    animal1_desc: "Паркта таштак капталдарда жана альп жайыттарында жашаган тоо текелеринин эң ири өкүлү.",
+    animal2_name: "Борсук",
+    animal2_desc: "Капчыгайдын токой алкагында түнкүсүн жашаган жырткыч.",
+    animal3_name: "Илбирс (кар барс)",
+    animal3_desc: "Кыргызстандын символу болгон сейрек жана корголуучу жырткыч. Кызыл китепке киргизилген.",
+    animal4_name: "Сибирдик кара баштуу чекан",
+    animal4_desc: "Жайында паркта уя салган кичинекей учуучу куш.",
+    animal5_name: "Беркут",
+    animal5_desc: "Капчыгайдын үстүндө учуп жүргөн улуу жырткыч куш. Кыргызстандын улуттук куш символу."
   },
 
   en: {
@@ -181,6 +211,21 @@ const translations = {
     plant4_name: "Richter's Edelweiss",
     plant4_desc: "A rare alpine plant with snow-white flowers, inhabiting the rocky screes of the alpine belt.",
     plant5_name: "Cherry Plum Blossoms",
-    plant5_desc: "The delicate pink-white blossoms of cherry plum appear in early spring, marking the beginning of the growing season in the park."
+    plant5_desc: "The delicate pink-white blossoms of cherry plum appear in early spring, marking the beginning of the growing season in the park.",
+
+    animals_title: "🐾 Animals",
+    animals_intro: "The fauna of Ala-Archa State Nature Park is unique due to dramatic altitude changes (from 1,600 to 4,860 metres), which allows steppe, forest and high-mountain species to coexist here.",
+    animals_intro2: "All hunting within the park is strictly prohibited.",
+    animals_section_title: "Animal Species",
+    animal1_name: "Siberian Mountain Ibex",
+    animal1_desc: "The largest representative of wild goats, inhabiting the rocky slopes and alpine meadows of the park.",
+    animal2_name: "Badger",
+    animal2_desc: "An omnivorous mustelid predator with a nocturnal lifestyle in the forest belt of the gorge.",
+    animal3_name: "Snow Leopard (Ilbirs)",
+    animal3_desc: "A rare and protected predator, the symbol of Kyrgyzstan. Lives in the high mountains, listed in the Red Book.",
+    animal4_name: "Siberian Stonechat",
+    animal4_desc: "A small migratory bird that nests on open slopes and meadows of the park during summer.",
+    animal5_name: "Golden Eagle",
+    animal5_desc: "A majestic eagle soaring above the gorge. The national bird and symbol of Kyrgyzstan."
   }
 };
