@@ -409,7 +409,6 @@ body {
   justify-content: center;
   margin-top: 0;
   box-sizing: border-box;
-  padding-top: 70px;
 }
 
 .page-hero-content {
@@ -526,7 +525,6 @@ body {
   justify-content: center;
   text-align: center;
   margin-top: 0;
-  padding-top: 70px;
 }
 
 .plants-hero-overlay {
@@ -563,7 +561,6 @@ body {
   justify-content: center;
   text-align: center;
   margin-top: 0;
-  padding-top: 70px;
 }
 
 .animals-hero-overlay {
@@ -692,7 +689,6 @@ body {
   justify-content: center;
   text-align: center;
   margin-top: 0;
-  padding-top: 70px;
 }
 
 .parkinfo-hero-overlay {
@@ -965,7 +961,6 @@ body {
   justify-content: center;
   text-align: center;
   margin-top: 0;
-  padding-top: 70px;
 }
 
 .news-hero-overlay {
@@ -1282,7 +1277,6 @@ body {
   justify-content: center;
   text-align: center;
   margin-top: 0;
-  padding-top: 70px;
 }
 
 .contact-hero-overlay {
@@ -1588,6 +1582,7 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
 
 
 
