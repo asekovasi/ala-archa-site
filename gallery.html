@@ -11,13 +11,13 @@
 
 <nav class="navbar">
   <a href="index.html" class="nav-logo">
-    <img src="images/logo.png" alt="Ала-Арча Парк" />
+    <img src="images/logo.png" alt="Ала-Арча Парк"/>
   </a>
   <ul class="nav-links">
-    <li><a href="index.html" data-i18n="nav_home">Башкы бет</a></li>
+    <li><a href="index.html" data-i18n="nav_home">Главная</a></li>
     <li><a href="park-info.html" data-i18n="nav_about">О нас</a></li>
     <li><a href="gallery.html" class="active" data-i18n="nav_gallery">Галерея</a></li>
-    <li><a href="news.html" data-i18n="nav_news">Жаңылыктар</a></li>
+    <li><a href="news.html" data-i18n="nav_news">Новости</a></li>
     <li><a href="contact.html" data-i18n="nav_contact">Контакт</a></li>
   </ul>
   <div class="lang-switcher">
@@ -27,28 +27,127 @@
   </div>
 </nav>
 
-<section class="page-hero" style="background-image:url('images/park.jpg')">
-  <div class="hero-overlay"></div>
-  <div class="page-hero-content">
-    <h1 data-i18n="nav_gallery">Галерея</h1>
+<!-- Hero -->
+<section class="gallery-hero">
+  <div class="gallery-hero-overlay"></div>
+  <div class="gallery-hero-content">
+    <h1 data-i18n="nav_gallery">📷 Галерея</h1>
+    <p data-i18n="gallery_hero_sub">Красота Ала-Арча в объективе</p>
   </div>
 </section>
 
-<section class="gallery-section">
-  <p class="gallery-placeholder" data-i18n="gallery_placeholder">Фотографии скоро будут добавлены...</p>
-  <div class="gallery-grid" id="gallery-grid">
-    <!-- Photos will be added here -->
+<!-- Gallery grid -->
+<section class="gallery-page-section">
+  <div class="gallery-masonry">
+
+    <div class="gal-item" onclick="openLightbox(0)">
+      <img src="images/galery1.jpg" alt="Ала-Арча — осенний лес с домиками"/>
+      <div class="gal-overlay"><span>🏠 Домики в осеннем лесу</span></div>
+    </div>
+
+    <div class="gal-item" onclick="openLightbox(1)">
+      <img src="images/galery2.jpg" alt="Гостиница на фоне гор"/>
+      <div class="gal-overlay"><span>🏔️ Гостиница «Ак-Марал»</span></div>
+    </div>
+
+    <div class="gal-item" onclick="openLightbox(2)">
+      <img src="images/galery3.jpg" alt="Горное озеро с отражением"/>
+      <div class="gal-overlay"><span>💧 Горное озеро</span></div>
+    </div>
+
+    <div class="gal-item" onclick="openLightbox(3)">
+      <img src="images/galery4.jpg" alt="Юрта в парке"/>
+      <div class="gal-overlay"><span>⛺ Юрта</span></div>
+    </div>
+
+    <div class="gal-item" onclick="openLightbox(4)">
+      <img src="images/galery5.jpg" alt="Осенняя дорога в парке"/>
+      <div class="gal-overlay"><span>🍂 Осенняя дорога</span></div>
+    </div>
+
+    <div class="gal-item" onclick="openLightbox(5)">
+      <img src="images/galery6.jpg" alt="Дорога среди зелёных склонов"/>
+      <div class="gal-overlay"><span>🛣️ Дорога в парк</span></div>
+    </div>
+
+    <div class="gal-item" onclick="openLightbox(6)">
+      <img src="images/galery7.jpg" alt="Гостиница зимой в снегу"/>
+      <div class="gal-overlay"><span>❄️ Зима в парке</span></div>
+    </div>
+
+    <div class="gal-item" onclick="openLightbox(7)">
+      <img src="images/galery8.jpg" alt="Горная река в ущелье"/>
+      <div class="gal-overlay"><span>🏞️ Горная река</span></div>
+    </div>
+
   </div>
 </section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+  <button class="lb-close" onclick="closeLightbox()">&times;</button>
+  <button class="lb-prev" onclick="lbNav(-1, event)">&#10094;</button>
+  <button class="lb-next" onclick="lbNav(1, event)">&#10095;</button>
+  <div class="lb-content">
+    <img id="lb-img" src="" alt=""/>
+    <p id="lb-caption"></p>
+  </div>
+</div>
 
 <footer class="footer">
-  <p data-i18n="footer_text">© 2026 Ала-Арча Мамлекеттик Жаратылыш Паркы</p>
+  <p data-i18n="footer_text">© 2026 Ала-Арча Государственный Природный Парк</p>
 </footer>
 
 <script src="i18n.js"></script>
 <script src="main.js"></script>
+<script>
+const galleryImages = [
+  { src: 'images/galery1.jpg', caption: '🏠 Домики в осеннем лесу' },
+  { src: 'images/galery2.jpg', caption: '🏔️ Гостиница «Ак-Марал»' },
+  { src: 'images/galery3.jpg', caption: '💧 Горное озеро' },
+  { src: 'images/galery4.jpg', caption: '⛺ Юрта' },
+  { src: 'images/galery5.jpg', caption: '🍂 Осенняя дорога' },
+  { src: 'images/galery6.jpg', caption: '🛣️ Дорога в парк' },
+  { src: 'images/galery7.jpg', caption: '❄️ Зима в парке' },
+  { src: 'images/galery8.jpg', caption: '🏞️ Горная река' },
+];
+
+let currentLb = 0;
+
+function openLightbox(index) {
+  currentLb = index;
+  document.getElementById('lb-img').src = galleryImages[index].src;
+  document.getElementById('lb-caption').textContent = galleryImages[index].caption;
+  document.getElementById('lightbox').classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox(e) {
+  if (!e || e.target === document.getElementById('lightbox') || e.target.classList.contains('lb-close')) {
+    document.getElementById('lightbox').classList.remove('active');
+    document.body.style.overflow = '';
+  }
+}
+
+function lbNav(dir, e) {
+  e.stopPropagation();
+  currentLb = (currentLb + dir + galleryImages.length) % galleryImages.length;
+  const img = document.getElementById('lb-img');
+  img.style.opacity = '0';
+  setTimeout(() => {
+    img.src = galleryImages[currentLb].src;
+    document.getElementById('lb-caption').textContent = galleryImages[currentLb].caption;
+    img.style.opacity = '1';
+  }, 200);
+}
+
+document.addEventListener('keydown', e => {
+  if (document.getElementById('lightbox').classList.contains('active')) {
+    if (e.key === 'ArrowRight') lbNav(1, { stopPropagation: () => {} });
+    if (e.key === 'ArrowLeft')  lbNav(-1, { stopPropagation: () => {} });
+    if (e.key === 'Escape')     closeLightbox({ target: document.getElementById('lightbox') });
+  }
+});
+</script>
 </body>
 </html>
-
-
-
