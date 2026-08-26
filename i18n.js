@@ -51,7 +51,7 @@ const translations = {
     form_subject: "Тема",
     form_message: "Сообщение",
     form_send: "Отправить",
-    form_success: "✅ Сообщение отправлено! Мы свяжемся с вами в ближайшее время."
+    form_success: "✅ Сообщение отправлено! Мы свяжемся с вами в ближайшее время.",
 
     footer_text: "© 2026 Ала-Арча Государственный Природный Парк",
 
@@ -137,7 +137,7 @@ const translations = {
     form_subject: "Тема",
     form_message: "Кат",
     form_send: "Жөнөтүү",
-    form_success: "✅ Кат жөнөтүлдү! Жакында сиз менен байланышабыз."
+    form_success: "✅ Кат жөнөтүлдү! Жакында сиз менен байланышабыз.",
 
     footer_text: "© 2026 Ала-Арча Мамлекеттик Жаратылыш Паркы",
 
@@ -224,7 +224,7 @@ const translations = {
     form_subject: "Subject",
     form_message: "Message",
     form_send: "Send",
-    form_success: "✅ Message sent! We will get back to you shortly."
+    form_success: "✅ Message sent! We will get back to you shortly.",
 
     footer_text: "© 2026 Ala-Archa State Nature Park",
 
