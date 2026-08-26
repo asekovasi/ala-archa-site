@@ -37,11 +37,21 @@ const translations = {
     contact_placeholder: "",
 
     contact_addr_label: "Адрес",
-    contact_addr_val: "Кыргызстан, 40 км от Бишкека, ущелье Ала-Арча",
+    contact_addr_val: "Кыргызстан, Чуйская область, Аламудунский район, с. Кашка-Суу, 40 км от Бишкека",
     contact_phone_label: "Телефон",
-    contact_phone_val: "Скоро будет добавлен",
+    contact_phone_val: "+996 (312) 883-204",
     contact_email_label: "Email",
-    contact_email_val: "Скоро будет добавлен",
+    contact_email_val: "alaarca555@gmail.com",
+    contact_hours_label: "Режим работы",
+    contact_hours_val: "Ежедневно, круглосуточно. Администрация: 09:00–18:00",
+    contact_hero_sub: "Свяжитесь с нами — мы всегда рады помочь",
+    contact_form_title: "Написать нам",
+    form_name: "Ваше имя",
+    form_email: "Email",
+    form_subject: "Тема",
+    form_message: "Сообщение",
+    form_send: "Отправить",
+    form_success: "✅ Сообщение отправлено! Мы свяжемся с вами в ближайшее время."
 
     footer_text: "© 2024 Ала-Арча Государственный Природный Парк",
 
@@ -113,11 +123,21 @@ const translations = {
     contact_placeholder: "",
 
     contact_addr_label: "Дарек",
-    contact_addr_val: "Кыргызстан, Бишкектен 40 км, Ала-Арча капчыгайы",
+    contact_addr_val: "Кыргызстан, Чүй облусу, Аламүдүн району, Кашка-Суу айылы, Бишкектен 40 км",
     contact_phone_label: "Телефон",
-    contact_phone_val: "Жакында кошулат",
+    contact_phone_val: "+996 (312) 883-204",
     contact_email_label: "Email",
-    contact_email_val: "Жакында кошулат",
+    contact_email_val: "alaarca555@gmail.com",
+    contact_hours_label: "Иштөө режими",
+    contact_hours_val: "Күн сайын, тынымсыз. Администрация: 09:00–18:00",
+    contact_hero_sub: "Биз менен байланышыңыз — дайым жардам берүүгө даярбыз",
+    contact_form_title: "Бизге жазыңыз",
+    form_name: "Атыңыз",
+    form_email: "Email",
+    form_subject: "Тема",
+    form_message: "Кат",
+    form_send: "Жөнөтүү",
+    form_success: "✅ Кат жөнөтүлдү! Жакында сиз менен байланышабыз."
 
     footer_text: "© 2024 Ала-Арча Мамлекеттик Жаратылыш Паркы",
 
@@ -190,11 +210,21 @@ const translations = {
     contact_placeholder: "",
 
     contact_addr_label: "Address",
-    contact_addr_val: "Kyrgyzstan, 40 km from Bishkek, Ala-Archa gorge",
+    contact_addr_val: "Kyrgyzstan, Chui region, Alamudun district, Kashka-Suu village, 40 km from Bishkek",
     contact_phone_label: "Phone",
-    contact_phone_val: "Coming soon",
+    contact_phone_val: "+996 (312) 883-204",
     contact_email_label: "Email",
-    contact_email_val: "Coming soon",
+    contact_email_val: "alaarca555@gmail.com",
+    contact_hours_label: "Working hours",
+    contact_hours_val: "Daily, 24/7. Administration: 09:00–18:00",
+    contact_hero_sub: "Get in touch — we are always happy to help",
+    contact_form_title: "Write to us",
+    form_name: "Your name",
+    form_email: "Email",
+    form_subject: "Subject",
+    form_message: "Message",
+    form_send: "Send",
+    form_success: "✅ Message sent! We will get back to you shortly."
 
     footer_text: "© 2024 Ala-Archa State Nature Park",
 

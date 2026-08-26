@@ -9,15 +9,15 @@
 </head>
 <body>
 
-<nav class="navbar">
+<nav class="navbar scrolled">
   <a href="index.html" class="nav-logo">
-    <img src="images/logo.png" alt="Ала-Арча Парк" />
+    <img src="images/logo.png" alt="Ала-Арча Парк"/>
   </a>
   <ul class="nav-links">
-    <li><a href="index.html" data-i18n="nav_home">Башкы бет</a></li>
+    <li><a href="index.html" data-i18n="nav_home">Главная</a></li>
     <li><a href="park-info.html" data-i18n="nav_about">О нас</a></li>
     <li><a href="gallery.html" data-i18n="nav_gallery">Галерея</a></li>
-    <li><a href="news.html" data-i18n="nav_news">Жаңылыктар</a></li>
+    <li><a href="news.html" data-i18n="nav_news">Новости</a></li>
     <li><a href="contact.html" class="active" data-i18n="nav_contact">Контакт</a></li>
   </ul>
   <div class="lang-switcher">
@@ -27,40 +27,109 @@
   </div>
 </nav>
 
-<section class="page-hero" style="background-image:url('images/contact.jpg')">
-  <div class="hero-overlay"></div>
-  <div class="page-hero-content">
-    <h1 data-i18n="nav_contact">Контакт</h1>
+<!-- Hero -->
+<section class="contact-hero">
+  <div class="contact-hero-overlay"></div>
+  <div class="contact-hero-content">
+    <h1 data-i18n="nav_contact">📞 Контакт</h1>
+    <p data-i18n="contact_hero_sub">Свяжитесь с нами — мы всегда рады помочь</p>
   </div>
 </section>
 
-<section class="contact-section">
-  <p class="gallery-placeholder" data-i18n="contact_placeholder">Контактная информация скоро будет добавлена...</p>
-  <div class="contact-grid">
-    <div class="contact-card">
-      <div class="contact-icon">📍</div>
-      <h3 data-i18n="contact_addr_label">Адрес</h3>
-      <p data-i18n="contact_addr_val">Кыргызстан, 40 км от Бишкека, Ала-Арча ущелье</p>
+<!-- Contact content -->
+<section class="contact-page-section">
+  <div class="contact-page-container">
+
+    <!-- Contact cards -->
+    <div class="contact-cards-row">
+
+      <div class="contact-info-card">
+        <div class="contact-info-icon">📍</div>
+        <h3 data-i18n="contact_addr_label">Адрес</h3>
+        <p data-i18n="contact_addr_val">Кыргызстан, Чуйская область, Аламудунский район, село Кашка-Суу<br/>40 км от Бишкека</p>
+      </div>
+
+      <div class="contact-info-card highlight">
+        <div class="contact-info-icon">📞</div>
+        <h3 data-i18n="contact_phone_label">Телефон</h3>
+        <a href="tel:+996312883204" class="contact-link">+996 (312) 883-204</a>
+      </div>
+
+      <div class="contact-info-card highlight">
+        <div class="contact-info-icon">✉️</div>
+        <h3 data-i18n="contact_email_label">Email</h3>
+        <a href="mailto:alaarca555@gmail.com" class="contact-link">alaarca555@gmail.com</a>
+      </div>
+
+      <div class="contact-info-card">
+        <div class="contact-info-icon">🕐</div>
+        <h3 data-i18n="contact_hours_label">Режим работы</h3>
+        <p data-i18n="contact_hours_val">Ежедневно, круглосуточно<br/>Администрация: 09:00 – 18:00</p>
+      </div>
+
     </div>
-    <div class="contact-card">
-      <div class="contact-icon">📞</div>
-      <h3 data-i18n="contact_phone_label">Телефон</h3>
-      <p data-i18n="contact_phone_val">Скоро будет добавлен</p>
+
+    <!-- Map placeholder -->
+    <div class="contact-map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47844.08!2d74.4941!3d42.5684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38960e0e58a0b555%3A0x4e5c4c1e3b8e1e7a!2z0JDQu9CwLdCQ0YDRh9CwINGB0YLQsNC90LjRhtCwINC_0YDQuNGA0L7QtNC90YvQuSDQv9Cw0YDQug!5e0!3m2!1sru!2skg!4v1234567890"
+        width="100%"
+        height="400"
+        style="border:0; border-radius:16px;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Карта Ала-Арча">
+      </iframe>
     </div>
-    <div class="contact-card">
-      <div class="contact-icon">✉️</div>
-      <h3 data-i18n="contact_email_label">Email</h3>
-      <p data-i18n="contact_email_val">Скоро будет добавлен</p>
+
+    <!-- Contact form -->
+    <div class="contact-form-wrap">
+      <h2 data-i18n="contact_form_title">Написать нам</h2>
+      <form class="contact-form" onsubmit="sendForm(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label data-i18n="form_name">Ваше имя</label>
+            <input type="text" placeholder="Введите имя" required/>
+          </div>
+          <div class="form-group">
+            <label data-i18n="form_email">Email</label>
+            <input type="email" placeholder="example@mail.com" required/>
+          </div>
+        </div>
+        <div class="form-group">
+          <label data-i18n="form_subject">Тема</label>
+          <input type="text" placeholder="Тема обращения"/>
+        </div>
+        <div class="form-group">
+          <label data-i18n="form_message">Сообщение</label>
+          <textarea rows="5" placeholder="Напишите ваше сообщение..." required></textarea>
+        </div>
+        <button type="submit" class="form-submit" data-i18n="form_send">Отправить</button>
+        <div id="form-success" class="form-success" style="display:none" data-i18n="form_success">
+          ✅ Сообщение отправлено! Мы свяжемся с вами в ближайшее время.
+        </div>
+      </form>
     </div>
+
   </div>
 </section>
 
 <footer class="footer">
-  <p data-i18n="footer_text">© 2024 Ала-Арча Мамлекеттик Жаратылыш Паркы</p>
+  <p data-i18n="footer_text">© 2024 Ала-Арча Государственный Природный Парк</p>
 </footer>
 
 <script src="i18n.js"></script>
 <script src="main.js"></script>
+<script>
+function sendForm(e) {
+  e.preventDefault();
+  document.getElementById('form-success').style.display = 'block';
+  e.target.reset();
+  setTimeout(() => {
+    document.getElementById('form-success').style.display = 'none';
+  }, 5000);
+}
+</script>
 </body>
 </html>
-
