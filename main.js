@@ -34,7 +34,7 @@ function initNavbar() {
   const navbar = document.querySelector('.navbar');
   if (!navbar) return;
 
-  const hasHero = document.querySelector('.hero, .plants-hero, .animals-hero, .parkinfo-hero, .news-hero, .contact-hero, .page-hero');
+  const hasHero = document.querySelector('.hero, .plants-hero, .animals-hero, .parkinfo-hero, .news-hero, .contact-hero, .page-hero, .gallery-hero');
 
   if (hasHero) {
     // Есть hero — навбар прозрачный сверху, белый после скролла
